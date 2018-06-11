@@ -3,7 +3,7 @@ PODS:
   - Hue (3.0.1)
   - Imaginary (3.0.2):
     - Cache (~> 4.0)
-  - Lightbox (2.1.1):
+  - Lightbox (2.1.2):
     - Hue (~> 3.0)
     - Imaginary (~> 3.0)
 
@@ -18,7 +18,7 @@ SPEC CHECKSUMS:
   Cache: bd0233fc688b5e83a27bcd87807db7e6f23adcc5
   Hue: 93e852fa6211ab35922ad8c293f51c43d6c79eb2
   Imaginary: d675200546110e305d6a26db6267c0622ffe5e6b
-  Lightbox: ce54044b5004989fbec6832a3a2a5ba59b4376dc
+  Lightbox: 880defce38b6446b8083857ff6a35a7d92745719
 
 PODFILE CHECKSUM: 408ae3477507a1d4b7ff06ffb3f162eda443424f
 
