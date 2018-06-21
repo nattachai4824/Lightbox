@@ -83,7 +83,7 @@ open class FooterView: UIView {
         ui_header_view.backgroundColor = .white
         self.addSubview(ui_header_view)
         
-        let ui_separator = UIView(frame: CGRect(x: 61, y: 17, width: 2, height: 15))
+        let ui_separator = UIView(frame: CGRect(x: 74, y: 17, width: 2, height: 15))
         ui_separator.backgroundColor = UIColor(red: 69/255, green: 79/255, blue: 98/255, alpha: 1)
         ui_separator.layer.masksToBounds = true
         ui_separator.layer.cornerRadius = 1
@@ -170,12 +170,12 @@ extension FooterView: LayoutConfigurable {
         infoLabel.configureLayout()
         
         replyButton.frame.origin = CGPoint(
-            x: 85,
+            x: 105,
             y: 13
         )
         
         albumButton.frame.origin = CGPoint(
-            x: 19,
+            x: 26,
             y: 13
         )
     }
