@@ -170,7 +170,7 @@ extension FooterView: LayoutConfigurable {
         infoLabel.configureLayout()
         
         replyButton.frame.origin = CGPoint(
-            x: 105,
+            x: 102,
             y: 13
         )
         
