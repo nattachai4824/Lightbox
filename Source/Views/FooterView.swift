@@ -60,9 +60,10 @@ open class FooterView: UIView {
         }()
     
     open fileprivate(set) lazy var separatorView: UIView = { [unowned self] in
-        let view = UILabel(frame: CGRect.zero)
-        view.isHidden = !LightboxConfig.PageIndicator.enabled
-        view.backgroundColor = LightboxConfig.PageIndicator.separatorColor
+        let view = UIView(frame: CGRect(x: 74, y: 17, width: 2, height: 15))
+        view.backgroundColor = UIColor(red: 69/255, green: 79/255, blue: 98/255, alpha: 1)
+        view.layer.masksToBounds = true
+        view.layer.cornerRadius = 1
         
         return view
         }()
@@ -82,12 +83,6 @@ open class FooterView: UIView {
         let ui_header_view = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: height))
         ui_header_view.backgroundColor = .white
         self.addSubview(ui_header_view)
-        
-        let ui_separator = UIView(frame: CGRect(x: 74, y: 17, width: 2, height: 15))
-        ui_separator.backgroundColor = UIColor(red: 69/255, green: 79/255, blue: 98/255, alpha: 1)
-        ui_separator.layer.masksToBounds = true
-        ui_separator.layer.cornerRadius = 1
-        self.addSubview(ui_separator)
         
         _ = addGradientLayer(gradientColors)
         
@@ -138,13 +133,6 @@ open class FooterView: UIView {
                 y: frame.height - pageLabel.frame.height - 2 - bottomPadding
             )
         }
-        
-        separatorView.frame = CGRect(
-            x: 0,
-            y: pageLabel.frame.minY - 2.5,
-            width: frame.width,
-            height: 0.5
-        )
         
         resizeGradientLayer()
     }
