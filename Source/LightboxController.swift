@@ -200,6 +200,10 @@ open class LightboxController: UIViewController {
     open override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
+        iku()
+    }
+    
+    private func iku() {
         var header_height:CGFloat = 44
         var footer_height:CGFloat = 50
         
@@ -234,6 +238,7 @@ open class LightboxController: UIViewController {
         
         coordinator.animate(alongsideTransition: { _ in
             self.configureLayout(size)
+            self.iku()
         }, completion: nil)
     }
     
