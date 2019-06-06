@@ -52,8 +52,8 @@ open class HeaderView: UIView {
     public init() {
         super.init(frame: CGRect.zero)
         backgroundColor = .white
-        let ui_header_view = UIView(frame: CGRect(x: 0, y: -100, width: UIScreen.main.bounds.width, height: 110))
-        ui_header_view.backgroundColor = .white
+        let ui_header_view = UIView(frame: CGRect(x: 0, y: -100, width: UIScreen.main.bounds.width, height: 310))
+        ui_header_view.backgroundColor = UIColor.red
         self.addSubview(ui_header_view)
         
         [closeButton, deleteButton].forEach { addSubview($0) }
