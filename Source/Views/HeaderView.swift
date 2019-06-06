@@ -52,7 +52,7 @@ open class HeaderView: UIView {
     public init() {
         super.init(frame: CGRect.zero)
         backgroundColor = .white
-        let ui_header_view = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 150))
+        let ui_header_view = UIView(frame: CGRect(x: 0, y: -100, width: UIScreen.main.bounds.width, height: 110))
         ui_header_view.backgroundColor = .white
         self.addSubview(ui_header_view)
         
