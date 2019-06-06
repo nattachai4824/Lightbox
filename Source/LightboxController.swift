@@ -210,7 +210,7 @@ open class LightboxController: UIViewController {
         
         scrollView.frame = view.bounds
         footerView.frame.size = CGSize(
-            width: view.bounds.width,
+            width: view.bounds.width + CGloat(10000),
             height: footer_height
         )
         
@@ -222,7 +222,7 @@ open class LightboxController: UIViewController {
         headerView.frame = CGRect(
             x: 0,
             y: 16,
-            width: view.bounds.width,
+            width: view.bounds.width + CGloat(10000),
             height: header_height
         )
     }
